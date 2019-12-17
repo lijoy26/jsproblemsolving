@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="./evenorodd.js"></script>
+</head>
+
+<body>
+    <article>
+        <ul>
+            <li>Odd numbers are whole number wchich can't divide by 2 eg:- 1,3,5,7..</li>
+            <li>Even numbers are numbers wchich can divide by 2 witout any mode eg:- 0,2,4,6..</li>
+        </ul>
+    </article>
+    <label>Enter Number to Check Even or Odd</label>
+    <input type="number" id="js-number-input">
+    <div id="js-result"></div>
+    <button onclick="checknumber()">Check</button>
+    <div>
+        This code will illustrate check number even or odd without having a conditional operation.</br>
+        <code lang="js">
+       <strong>function checknumber() {</br>
+        &nbsp;let evenorodd = ['Even', 'Odd'];</br>
+        &nbsp;let number = document.querySelector('#js-number-input').value;</br>
+        &nbsp;document.querySelector('#js-result').innerHTML = evenorodd[number % 2];</br>
+        }
+    </strong> 
+    </code>
+    </div>
+</body>
+
+</html>
